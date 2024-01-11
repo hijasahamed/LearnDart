@@ -1,3 +1,10 @@
+// types of parameters in dart 
+// 1.positional parameter
+// 2.default parameter
+// 3.required parameter 
+// 4.named parameter 
+// 5.optional parameter 
+
 void main(){
   requiredpara(name: 'Hijas');
   namedpara(age: 24);
