@@ -1,13 +1,17 @@
-void main(){
-  // var datatype can change its value but cannot change its datatype. 
-  var a=10;
-  print(a);
-  a=20;
-  print(a);
+import 'dart:async';
 
-  //dynamic datatype can change its value and datatype also.
-  dynamic z=1000;
-  print(z);
-  z='hijas';
-  print(z);
+main(){
+  final StreamController<int> controller=StreamController<int>();
+
+  final Stream<int> stream = controller.stream;
+
+  final StreamSubscription<int> subscription = stream.listen((int data) {
+    print('Received data: $data');
+  });
+
+  controller.add(1);
+  controller.add(2);
+  controller.add(3);
+
+  subscription.cancel();
 }
