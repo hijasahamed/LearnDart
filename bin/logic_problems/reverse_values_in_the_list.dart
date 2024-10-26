@@ -1,3 +1,4 @@
+// reverse the values inside a list
 void main(){
   List arr = [547,456,485];
   List resArr = [];
@@ -5,4 +6,5 @@ void main(){
     resArr.add(int.parse(arr[i].toString().split('').reversed.join()));
   }
   print(resArr);
+  // result [745, 654, 584]
 }

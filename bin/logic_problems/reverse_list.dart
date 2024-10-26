@@ -1,4 +1,3 @@
-
 // 1. reverse a list without using build functions
 void main(){
   List arr = [45,187,235,458,125,558];
@@ -9,6 +8,11 @@ void main(){
     arr[arr.length-1-i] = temp;
   }
   print(arr);
+//result = [558, 125, 458, 235, 187, 45]
 }
 
+
 // 2.another way
+void main2(){
+  
+}
