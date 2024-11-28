@@ -1,12 +1,12 @@
 void main(){
-  List arr = [10, 2, 3, 4, 5, 6, 7, 8, 9];
-  int smallest = arr[0];
+  List arr = [10,1,2,300,4,5,60];
+  int smallest=arr[0];
   int secondSmallest = double.maxFinite.toInt();
   for(int i=0;i<arr.length;i++){
     if(arr[i]<smallest){
       secondSmallest=smallest;
       smallest=arr[i];
-    }else if(arr[i]<secondSmallest){
+    }else if(arr[i]<secondSmallest && arr[i] != smallest){
       secondSmallest=arr[i];
     }
   }
