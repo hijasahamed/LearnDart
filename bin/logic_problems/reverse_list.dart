@@ -10,9 +10,3 @@ void main(){
   print(arr);
 //result = [558, 125, 458, 235, 187, 45]
 }
-
-
-// 2.another way
-void main2(){
-  
-}

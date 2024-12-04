@@ -8,3 +8,21 @@ void main(){
     print('no');
   }
 }
+
+// another method
+void main1(){
+  String str='malayalamm';
+  int flag=0;
+  for(int i=0;i<str.length;i++){
+    if(str[i]==str[str.length-1-i]){
+      flag ++;
+    }else{
+      break;
+    }
+  }
+  if(flag==str.length){
+    print('TRUE');
+  }else{
+    print('FALSE');
+  }
+}
